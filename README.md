@@ -21,3 +21,20 @@ Run `npm init` or `yarn` inside your `frontend` folder to download the dependenc
 To run the app execute `npm start` or `yarn start` inside your `frontend` folder.
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Connect the app with the backend
+
+Drupal is configured to not allow sending content to a different domain than its own. Following needs to be done:
+
+Copy `/web/sites/default/default.services.yml` to `/web/sites/default/services.yml` and change following values:
+
+```
+  cors.config:
+    enabled: true
+    # Specify allowed headers, like 'x-allowed-header'.
+    allowedHeaders: ['Content-Type', 'Access-Control-Allow-Origin']
+    # Specify allowed request methods, specify ['*'] to allow all possible ones.
+    allowedMethods: ['*']
+```
+
+You'll also need to set the correct graphql endpoint URL in createBatchingNetworkInterface in the App.js
