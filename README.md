@@ -37,4 +37,4 @@ Copy `/web/sites/default/default.services.yml` to `/web/sites/default/services.y
     allowedMethods: ['*']
 ```
 
-You'll also need to set the correct graphql endpoint URL in createBatchingNetworkInterface in the App.js
+You'll also need to set the correct graphql endpoint URL (http://drupal-installation.dev/graphql) in `createBatchingNetworkInterface` in the App.js
