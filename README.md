@@ -37,4 +37,8 @@ Copy `/web/sites/default/default.services.yml` to `/web/sites/default/services.y
     allowedMethods: ['*']
 ```
 
-You'll also need to set the correct graphql endpoint URL (http://drupal-installation.dev/graphql) in `createBatchingNetworkInterface` in the App.js
+Clear the cache, so that the changes take effect.
+
+You'll also need to set the correct graphql endpoint URL (http://drupal-installation.dev/graphql) in `createBatchingNetworkInterface` in the App.js.
+
+Note, there is not authentication in the app (yet), so anonymous user in Drupal are assigned the permission "Execute arbitrary GraphQL requests".
