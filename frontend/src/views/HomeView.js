@@ -2,14 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { gql, graphql } from 'react-apollo'
 
-const query = gql`query {
+const query = gql`
+query {
   nodeQuery {
     entities {
       entityId,
       entityLabel
     }
   }
-}`;
+}
+`;
 
 class HomeView extends React.Component {
   render() {
