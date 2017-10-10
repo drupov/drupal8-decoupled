@@ -5,16 +5,15 @@ const query = gql`
 query ($id: String, $language: AvailableLanguages) {
   nodeById(id: $id, language: $language) {
     entityId
-    entityLabel,
+    entityLabel
     entityCreated
   }
 }
-`
+`;
 
 class DetailView extends React.Component {
   render() {
-    let { data } = this.props
-    console.log(this.props)
+    let { data } = this.props;
     if (data.loading) { return <div>Loading...</div> }
     return (
       <div>
@@ -33,7 +32,7 @@ const queryOptions = {
       language: 'en'
     },
   }),
-}
+};
 
-DetailView = graphql(query, queryOptions)(DetailView)
+DetailView = graphql(query, queryOptions)(DetailView);
 export default DetailView
