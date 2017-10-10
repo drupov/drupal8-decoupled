@@ -1,5 +1,5 @@
-import React from 'react'
-import { gql, graphql } from 'react-apollo'
+import React from 'react';
+import { gql, graphql } from 'react-apollo';
 
 const mutation = gql`
 mutation ($input: NodeArticleCreateInput!) {
@@ -18,25 +18,22 @@ mutation ($input: NodeArticleCreateInput!) {
 }
 `;
 
-/*
-{
-  "input": {
-    "title": "My cool title",
-    "comment": {
-      "status": "1"
-    }
-  }
-}
-*/
-
 class CreateView extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     let formData = new FormData(this.form);
     this.props
-      .mutate({variables: {input: formData.get('title')}})
+      .mutate({variables: {
+        input: {
+          title: formData.get('title'),
+          comment: {
+            "status": "1"
+          }
+        }
+      }})
       .then(res => {
-        if (res.data.createNodeArticle.errors === null) {
+        console.log(res);
+        if (res.data.createNodeArticle.errors.length === 0) {
           window.location.replace(`/`);
         }
         else {
@@ -65,4 +62,5 @@ class CreateView extends React.Component {
 }
 
 CreateView = graphql(mutation)(CreateView);
-export default CreateView
+
+export default CreateView;
