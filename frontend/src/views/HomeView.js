@@ -4,9 +4,9 @@ import { gql, graphql } from 'react-apollo'
 
 const query = gql`
 query {
-  nodeQuery {
+  nodeQuery (limit: 100) {
     entities {
-      entityId,
+      entityId
       entityLabel
     }
   }
