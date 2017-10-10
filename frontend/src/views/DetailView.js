@@ -1,5 +1,5 @@
-import React from 'react'
-import { gql, graphql } from 'react-apollo'
+import React from 'react';
+import { gql, graphql } from 'react-apollo';
 
 const query = gql`
 query ($id: String, $language: AvailableLanguages) {
@@ -35,4 +35,5 @@ const queryOptions = {
 };
 
 DetailView = graphql(query, queryOptions)(DetailView);
-export default DetailView
+
+export default DetailView;
