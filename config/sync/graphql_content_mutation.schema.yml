@@ -1,0 +1,61 @@
+types:
+  node:
+    bundles:
+      article:
+        create: true
+        update: false
+      page:
+        create: true
+        update: false
+    delete: false
+  block_content:
+    delete: false
+    bundles:
+      basic:
+        create: false
+        update: false
+  comment:
+    delete: false
+    bundles:
+      comment:
+        create: false
+        update: false
+  contact_message:
+    delete: false
+    bundles:
+      feedback:
+        create: false
+        update: false
+      personal:
+        create: false
+        update: false
+  file:
+    delete: false
+    bundles:
+      file:
+        create: false
+        update: false
+  shortcut:
+    delete: false
+    bundles:
+      default:
+        create: false
+        update: false
+  taxonomy_term:
+    delete: false
+    bundles:
+      tags:
+        create: false
+        update: false
+  user:
+    delete: false
+    bundles:
+      user:
+        create: false
+        update: false
+  menu_link_content:
+    delete: false
+    bundles:
+      menu_link_content:
+        create: false
+        update: false
