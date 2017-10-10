@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { gql, graphql } from 'react-apollo'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { gql, graphql } from 'react-apollo';
 
 const query = gql`
 query {
@@ -32,4 +32,5 @@ class HomeView extends React.Component {
 }
 
 HomeView = graphql(query)(HomeView);
-export default HomeView
+
+export default HomeView;
