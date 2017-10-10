@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import {
   ApolloClient,
   ApolloProvider,
   createBatchingNetworkInterface,
-} from 'react-apollo'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import HomeView from './views/HomeView'
-import CreateView from './views/CreateView'
-import DetailView from './views/DetailView'
+} from 'react-apollo';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import HomeView from './views/HomeView';
+import CreateView from './views/CreateView';
+import DetailView from './views/DetailView';
 
 const networkInterface = createBatchingNetworkInterface({
   uri: 'http://d8-react.dev/graphql/',
@@ -15,11 +15,11 @@ const networkInterface = createBatchingNetworkInterface({
   opts: {
     credentials: 'same-origin',
   }
-})
+});
 
 const client = new ApolloClient({
   networkInterface: networkInterface
-})
+});
 
 class App extends Component {
   render() {
