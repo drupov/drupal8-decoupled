@@ -4,13 +4,13 @@
 
 The backend (Drupal) part is based on the drupal-composer project, so that [most of its' documentation](https://github.com/drupal-composer/drupal-project) should apply here too.
 
-Run `composer update` inside root folder to get files needed for your Drupal installation.
+Run `composer update` inside `backend` folder to get files needed for your Drupal installation.
 
 In order to use the configuration through the config_installer profile add this to you settings.php
 
 `$settings['install_profile'] = 'config_installer';`
 
-Run `drush si config_installer --db-url=mysql://root:@localhost/d8_react --account-pass=admin --yes` inside your `web` folder (change the appropriate credentials and database names).
+Run `drush si config_installer --db-url=mysql://root:@localhost/d8_react --account-pass=admin --yes` inside your `backend/web` folder (change the appropriate credentials and database names).
 
 ## Installation instructions - frontend
 
@@ -26,7 +26,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Drupal is configured to not allow sending content to a different domain than its own. Following needs to be done:
 
-Copy `/web/sites/default/default.services.yml` to `/web/sites/default/services.yml` and change following values:
+Copy `/backend/web/sites/default/default.services.yml` to `/backend/web/sites/default/services.yml` and change following values:
 
 ```
   cors.config:
