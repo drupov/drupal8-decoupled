@@ -79,11 +79,6 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
-        },
-        "patches": {
-            "drupal/module_filter": {
-                "Filtering tabs and search do not work on Drupal 8.4.0-alpha1": "https://www.drupal.org/files/issues/filtering-tabs-doesnt-work-2902019-4.patch"
-            }
         }
     }
 }
