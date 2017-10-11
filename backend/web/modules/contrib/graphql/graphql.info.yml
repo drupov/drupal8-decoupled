@@ -1,0 +1,12 @@
+name: GraphQL
+type: module
+description: 'Exposes your Drupal data model through a GraphQL schema.'
+package: GraphQL
+configure: graphql.config_page
+# core: 8.x
+
+# Information added by Drupal.org packaging script on 2017-09-11
+version: '8.x-3.0-alpha6'
+core: '8.x'
+project: 'graphql'
+datestamp: 1505120980

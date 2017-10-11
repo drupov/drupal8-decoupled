@@ -1,0 +1,13 @@
+name: GraphQL Custom schema test module
+type: module
+description: Provides a custom GraphQL Schema for testing purposes.
+# core: 8.x
+package: Testinasdd
+dependencies:
+  - graphql
+
+# Information added by Drupal.org packaging script on 2017-09-11
+version: '8.x-3.0-alpha6'
+core: '8.x'
+project: 'graphql'
+datestamp: 1505120980
