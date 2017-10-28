@@ -1,4 +1,4 @@
-uuid: e208d87f-9763-4128-8374-be54aaa0504d
+uuid: 6b5a8bfb-e210-4089-9a4b-6c246497a72a
 langcode: en
 status: true
 dependencies: {  }
@@ -6,17 +6,11 @@ id: development
 label: Development
 folder: ../config/dev
 module:
-  admin_toolbar: 0
-  admin_toolbar_tools: 0
-  adminimal_admin_toolbar: 0
-  devel: 0
   devel_generate: 0
   filter_perms: 0
   fpa: 0
-  graphql_graphiql: 0
   module_filter: 0
-  toolbar_anti_flicker: 0
-  webprofiler: 0
+  views_ui: 0
 theme: {  }
 blacklist: {  }
 graylist: {  }
