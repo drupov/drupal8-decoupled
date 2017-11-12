@@ -24,6 +24,7 @@ module:
   filter: 0
   graphql: 0
   graphql_core: 0
+  graphql_mutation: 0
   help: 0
   history: 0
   image: 0
