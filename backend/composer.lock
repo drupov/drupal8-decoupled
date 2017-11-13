@@ -3440,7 +3440,7 @@
         },
         {
             "name": "symfony/cache",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
@@ -3685,7 +3685,7 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v2.8.29",
+            "version": "v2.8.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
@@ -3738,7 +3738,7 @@
         },
         {
             "name": "symfony/debug",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
@@ -3857,7 +3857,7 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
@@ -3973,16 +3973,16 @@
         },
         {
             "name": "symfony/expression-language",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/expression-language.git",
-                "reference": "01aee0c61126a02051b8ff5b997666da7f8bdae4"
+                "reference": "c46362f6025f3b110c8b747fe75aace90c884ec6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/expression-language/zipball/01aee0c61126a02051b8ff5b997666da7f8bdae4",
-                "reference": "01aee0c61126a02051b8ff5b997666da7f8bdae4",
+                "url": "https://api.github.com/repos/symfony/expression-language/zipball/c46362f6025f3b110c8b747fe75aace90c884ec6",
+                "reference": "c46362f6025f3b110c8b747fe75aace90c884ec6",
                 "shasum": ""
             },
             "require": {
@@ -4019,11 +4019,11 @@
             ],
             "description": "Symfony ExpressionLanguage Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-05T15:47:03+00:00"
+            "time": "2017-11-12T16:40:29+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -4072,7 +4072,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -4830,7 +4830,7 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
@@ -6692,7 +6692,7 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v3.3.11",
+            "version": "v3.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
