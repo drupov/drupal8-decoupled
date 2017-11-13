@@ -13,6 +13,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "url": "https://github.com/drupal-graphql/graphql-mutation",
+            "type": "git"
         }
     ],
     "require": {
@@ -27,7 +31,8 @@
         "drupal/devel": "~1.0",
         "drupal/filter_perms": "~1.0",
         "drupal/fpa": "~2.0",
-        "drupal/graphql": "~3.0",
+        "drupal/graphql": "3.x-dev",
+        "drupal/graphql-mutation": "8.x-1.x-dev",
         "drupal/module_filter": "~3.0",
         "drupal/toolbar_anti_flicker": "~1.4",
         "drush/drush": "~8.0",
@@ -68,7 +73,8 @@
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
         "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "mv web/modules/contrib/graphql-mutation web/modules/contrib/graphql_mutation"
         ]
     },
     "extra": {

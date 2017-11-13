@@ -17,7 +17,7 @@ class DetailView extends React.Component {
     if (data.loading) { return <div>Loading...</div> }
     return (
       <div>
-        <h1>Message: {data.nodeById.entityId}</h1>
+        <h1>Node ID: {data.nodeById.entityId}</h1>
         <p>{data.nodeById.entityCreated}</p>
         <p>{data.nodeById.entityLabel}</p>
       </div>
