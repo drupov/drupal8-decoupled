@@ -29,8 +29,8 @@ class App extends Component {
           <div>
             <Route exact path="/" component={HomeView} />
             <Switch>
-              <Route exact path="/messages/create/" component={CreateView} />
-              <Route exact path="/messages/:id/" component={DetailView} />
+              <Route exact path="/node/add/" component={CreateView} />
+              <Route exact path="/node/:id/" component={DetailView} />
             </Switch>
           </div>
         </Router>

@@ -21,7 +21,7 @@ class HomeView extends React.Component {
       <div>
         {data.nodeQuery.entities.map((item, index) => (
           <p key={item.entityId}>
-            <Link to={`/messages/${item.entityId}/`}>
+            <Link to={`/node/${item.entityId}/`}>
               {item.entityLabel}
             </Link>
           </p>
