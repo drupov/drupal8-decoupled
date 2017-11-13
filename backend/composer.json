@@ -15,7 +15,6 @@
             "url": "https://packages.drupal.org/8"
         },
         {
-            "name": "graphql_mutation",
             "url": "https://github.com/drupal-graphql/graphql-mutation",
             "type": "git"
         }
@@ -32,8 +31,8 @@
         "drupal/devel": "~1.0",
         "drupal/filter_perms": "~1.0",
         "drupal/fpa": "~2.0",
-        "drupal/graphql": "~3.0",
-        "drupal/graphql-mutation": "dev-8.x-1.x",
+        "drupal/graphql": "3.x-dev",
+        "drupal/graphql-mutation": "8.x-1.x-dev",
         "drupal/module_filter": "~3.0",
         "drupal/toolbar_anti_flicker": "~1.4",
         "drush/drush": "~8.0",
