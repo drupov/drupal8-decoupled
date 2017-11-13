@@ -73,7 +73,8 @@
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
         "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "mv web/modules/contrib/graphql-mutation web/modules/contrib/graphql_mutation"
         ]
     },
     "extra": {
