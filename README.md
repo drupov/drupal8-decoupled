@@ -26,7 +26,7 @@ The backend (Drupal) part is based on the drupal-composer project, so that [most
 
 Connect to the started container by `docker-compose run php bash`. Once inside the container change into the `/backend` folder and run `composer update` to get files needed for your Drupal installation.
 
-In order to use the configuration through the config_installer profile add this to you settings.php
+In order to use the configuration through the config_installer profile add this to you `settings.php`:
 
 `$settings['install_profile'] = 'config_installer';`
 
