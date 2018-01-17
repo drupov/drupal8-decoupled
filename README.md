@@ -1,16 +1,36 @@
 # Drupal 8 and React
 
+## Docker
+
+The backend runs on a docker-compose generated image with PHP 7.1 and most convenient tools preselected. It is based on [Wodby's Docker4Drupal project](https://github.com/wodby/docker4drupal).
+See also the "Quick start" section in the [documentation](https://wodby.com/stacks/drupal/docs/local/quick-start/).
+
+Therefore set the permissions (works for Ubuntu). Execute in the root folder of the repo:
+
+```
+sudo chown -R 82:alpine-www-data .
+sudo setfacl -dR -m u:$(whoami):rwX -m u:21:rX -m u:82:rwX  .
+sudo setfacl -R -m u:$(whoami):rwX -m u:21:rX -m u:82:rwX .
+
+```
+
+Run the following command to start the containers: `docker-compose up -d`
+
+You should now be able to connect to the container on [d8-react.docker.localhost:8000](d8-react.docker.localhost:8000).
+
+If you're starting from scratch there will be a "File not found"-error, as the backend is not installed yet (see next section).
+
 ## Installation instructions - backend
 
 The backend (Drupal) part is based on the drupal-composer project, so that [most of its' documentation](https://github.com/drupal-composer/drupal-project) should apply here too.
 
-Run `composer update` inside `/backend` folder to get files needed for your Drupal installation.
+Connect to the started container by `docker-compose run php bash`. Once inside the container change into the `/backend` folder and run `composer update` to get files needed for your Drupal installation.
 
 In order to use the configuration through the config_installer profile add this to you settings.php
 
 `$settings['install_profile'] = 'config_installer';`
 
-Run `drush si config_installer --db-url=mysql://root:@localhost/d8_react --account-pass=admin --yes` inside your `/backend/web` folder (change the appropriate credentials and database names).
+Run `drush si config_installer --db-url=mysql://drupal:drupal@mariadb/drupal --account-pass=admin --yes` inside your `/backend/web` folder (change the appropriate credentials and database names).
 
 ## Installation instructions - frontend
 
