@@ -16,7 +16,7 @@ sudo setfacl -R -m u:$(whoami):rwX -m u:21:rX -m u:82:rwX .
 
 Run the following command to start the containers: `docker-compose up -d`
 
-You should now be able to connect to the container on [d8-react.docker.localhost:8000](d8-react.docker.localhost:8000).
+You should now be able to connect to the container on [http://d8-react.docker.localhost:8000](http://d8-react.docker.localhost:8000).
 
 If you're starting from scratch there will be a "File not found"-error, as the backend is not installed yet (see next section).
 
