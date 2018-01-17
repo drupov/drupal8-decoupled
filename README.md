@@ -30,13 +30,15 @@ In order to use the configuration through the config_installer profile add this 
 
 `$settings['install_profile'] = 'config_installer';`
 
-Run `drush si config_installer --db-url=mysql://drupal:drupal@mariadb/drupal --account-pass=admin --yes` inside your `/backend/web` folder (change the appropriate credentials and database names).
+Run `drush si config_installer --db-url=mysql://drupal:drupal@mariadb/drupal --account-pass=admin --yes` inside your `/backend/web` folder in the container.
+
+You should now be able to see a fully installed Drupal 8 at [http://d8-react.docker.localhost:8000](http://d8-react.docker.localhost:8000).
 
 ## Installation instructions - frontend
 
 The frontend (React) part is based on the create-react-app project, so that [most of its' documentation](https://github.com/facebookincubator/create-react-app) should apply here too.
 
-Run `npm init` or `yarn` inside your `/frontend` folder to download the dependencies.
+Run `npm start` or `yarn` inside your `/frontend` folder to download the dependencies.
 
 To run the app execute `npm start` or `yarn start` inside your `/frontend` folder.
 
@@ -58,7 +60,5 @@ Copy `/backend/web/sites/default/default.services.yml` to `/backend/web/sites/de
 ```
 
 Clear the cache, so that the changes take effect.
-
-You'll also need to set the correct graphql endpoint URL (http://drupal-installation.dev/graphql) in `createBatchingNetworkInterface` in the App.js.
 
 Note, there is not authentication in the app (yet), so anonymous user in Drupal are assigned the permission "Execute arbitrary GraphQL requests".
