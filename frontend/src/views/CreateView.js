@@ -2,17 +2,16 @@ import React from 'react';
 import { gql, graphql } from 'react-apollo';
 
 const mutation = gql`
-mutation ($input: NodeArticleCreateInput!) {
-  createNodeArticle(input: $input) {
+mutation ($input: ArticleInput!) {
+  createArticle(input: $input) {
+    entity {
+      entityId
+      entityLabel
+    }
+    errors
     violations {
       path
       message
-    }
-    errors
-    entity {
-      entityId
-      entityBundle
-      entityLabel
     }
   }
 }
@@ -26,18 +25,16 @@ class CreateView extends React.Component {
       .mutate({variables: {
         input: {
           title: formData.get('title'),
-          comment: {
-            "status": "1"
-          }
+          body: formData.get('body')
         }
       }})
       .then(res => {
         console.log(res);
-        if (res.data.createNodeArticle.errors.length === 0) {
+        if (res.data.createArticle.errors.length === 0) {
           window.location.replace(`/`);
         }
         else {
-          console.log(res.data.createNodeArticle.errors);
+          console.log(res.data.createArticle.errors);
         }
       })
       .catch(err => {
@@ -53,7 +50,10 @@ class CreateView extends React.Component {
           ref={ref => (this.form = ref)}
           onSubmit={e => this.handleSubmit(e)}
         >
-          <textarea name="title" />
+          <input type="text" name="title" />
+          <br />
+          <textarea name="body" />
+          <br />
           <button type="submit">Submit</button>
         </form>
       </div>
