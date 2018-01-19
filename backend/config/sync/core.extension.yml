@@ -15,8 +15,10 @@ module:
   config_split: 0
   contact: 0
   contextual: 0
+  d8react_graphql_mutations: 0
   datetime: 0
   dblog: 0
+  devel: 0
   devel_generate: 0
   dynamic_page_cache: 0
   editor: 0

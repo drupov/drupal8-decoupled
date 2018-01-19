@@ -1,0 +1,7 @@
+name: GraphQL Mutations
+type: module
+description: 'Custom GraphQL mutations.'
+package: Custom
+core: 8.x
+dependencies:
+- graphql_core
