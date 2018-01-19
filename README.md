@@ -16,7 +16,7 @@ Run `drush si config_installer --db-url=mysql://root:@localhost/d8_react --accou
 
 The frontend (React) part is based on the create-react-app project, so that [most of its' documentation](https://github.com/facebookincubator/create-react-app) should apply here too.
 
-Run `npm init` or `yarn` inside your `/frontend` folder to download the dependencies.
+Run `npm install` or `yarn` inside your `/frontend` folder to download the dependencies.
 
 To run the app execute `npm start` or `yarn start` inside your `/frontend` folder.
 
