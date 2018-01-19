@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6fc7da46e21f4382be24b7cba12ca72",
+    "content-hash": "f6e1c2bb002f2b762ff702710dbbe09f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2083,8 +2083,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta1+27-dev",
-                    "datestamp": "1513076285",
+                    "version": "8.x-3.0-beta1+32-dev",
+                    "datestamp": "1516156384",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5138,16 +5138,16 @@
         },
         {
             "name": "youshido/graphql",
-            "version": "v1.5.3",
+            "version": "v1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Youshido/GraphQL.git",
-                "reference": "e941e8f208e780b529948fa10c502bc59c9fa644"
+                "reference": "627de161919059821a5411b9f3d58c26afb81683"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Youshido/GraphQL/zipball/e941e8f208e780b529948fa10c502bc59c9fa644",
-                "reference": "e941e8f208e780b529948fa10c502bc59c9fa644",
+                "url": "https://api.github.com/repos/Youshido/GraphQL/zipball/627de161919059821a5411b9f3d58c26afb81683",
+                "reference": "627de161919059821a5411b9f3d58c26afb81683",
                 "shasum": ""
             },
             "require": {
@@ -5177,7 +5177,7 @@
                 }
             ],
             "description": "Pure PHP GraphQL",
-            "time": "2018-01-16T15:26:05+00:00"
+            "time": "2017-10-20T11:25:48+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
