@@ -14,6 +14,7 @@ module:
   fpa: 0
   module_filter: 0
   views_ui: 0
+  webprofiler: 0
 theme: {  }
 blacklist: {  }
 graylist: {  }
