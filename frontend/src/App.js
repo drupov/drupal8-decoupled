@@ -10,7 +10,7 @@ import CreateView from './views/CreateView';
 import DetailView from './views/DetailView';
 
 const networkInterface = createBatchingNetworkInterface({
-  uri: 'http://d8-react.dev/graphql/',
+  uri: 'http://d8-react.local/graphql/',
   batchInterval: 10,
   opts: {
     credentials: 'same-origin',
