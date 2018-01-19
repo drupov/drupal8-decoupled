@@ -8,6 +8,7 @@ folder: ../config/dev
 module:
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
+  devel: 0
   devel_generate: 0
   filter_perms: 0
   fpa: 0
