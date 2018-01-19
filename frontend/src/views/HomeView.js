@@ -19,10 +19,11 @@ class HomeView extends React.Component {
     if (data.loading) { return <div>Loading...</div> }
     return (
       <div>
+        <Link to='node/add'>Add article</Link>
         {data.nodeQuery.entities.map((item, index) => (
           <p key={item.entityId}>
             <Link to={`/node/${item.entityId}/`}>
-              {item.entityLabel}
+              {item.entityLabel} ({item.entityId})
             </Link>
           </p>
         ))}
