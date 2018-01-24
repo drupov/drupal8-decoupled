@@ -2071,7 +2071,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/graphql",
-                "reference": "1740679983b1f667f1532711320baef82571f1a8"
+                "reference": "5fb63df209a9ec9ddb5400edf896eef61013753b"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -2083,8 +2083,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta1+34-dev",
-                    "datestamp": "1516376884",
+                    "version": "8.x-3.0-beta3+3-dev",
+                    "datestamp": "1516685292",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2110,7 +2110,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/graphql"
             },
-            "time": "2018-01-19T16:00:07+00:00"
+            "time": "2018-01-24T10:27:59+00:00"
         },
         {
             "name": "drupal/module_filter",
