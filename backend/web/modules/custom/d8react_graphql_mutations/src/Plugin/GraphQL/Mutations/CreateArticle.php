@@ -2,7 +2,6 @@
 
 namespace Drupal\d8react_graphql_mutations\Plugin\GraphQL\Mutations;
 
-use Drupal\graphql\GraphQL\Type\InputObjectType;
 use Drupal\graphql_core\Plugin\GraphQL\Mutations\Entity\CreateEntityBase;
 use Youshido\GraphQL\Execution\ResolveInfo;
 
@@ -26,11 +25,8 @@ class CreateArticle extends CreateEntityBase {
   /**
    * {@inheritdoc}
    */
-  protected function extractEntityInput(array $inputArgs, InputObjectType $inputType, ResolveInfo $info) {
-    return [
-      'title' => $inputArgs['title'],
-      'body' => $inputArgs['body'],
-    ];
+  protected function extractEntityInput(array $inputArgs, ResolveInfo $info) {
+    return $inputArgs['input'];
   }
 
 }
