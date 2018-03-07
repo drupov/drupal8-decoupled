@@ -2,3 +2,4 @@ name: d8-react
 recipe: drupal8
 config:
   webroot: backend/web
+  xdebug: true
