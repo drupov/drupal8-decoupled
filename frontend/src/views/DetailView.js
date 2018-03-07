@@ -2,8 +2,8 @@ import React from 'react';
 import { gql, graphql } from 'react-apollo';
 
 const query = gql`
-query ($id: String, $language: AvailableLanguages) {
-  nodeById(id: $id, language: $language) {
+query ($id: String!) {
+  nodeById(id: $id) {
     entityId
     entityLabel
     entityCreated
@@ -28,8 +28,7 @@ class DetailView extends React.Component {
 const queryOptions = {
   options: props => ({
     variables: {
-      id: props.match.params.id,
-      language: 'en'
+      id: props.match.params.id
     },
   }),
 };
