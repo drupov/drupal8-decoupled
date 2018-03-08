@@ -11,6 +11,7 @@ query ($id: String!) {
       body {
         value
       }
+      fieldMore
     }
   }
 }
@@ -25,6 +26,7 @@ class DetailView extends React.Component {
         <h1>{data.nodeById.entityLabel}</h1>
         <p>Created on: {data.nodeById.entityCreated}</p>
         <p>ID: {data.nodeById.entityId}</p>
+        <p>More field: {data.nodeById.fieldMore}</p>
         <p>{data.nodeById.body.value}</p>
       </div>
     )
