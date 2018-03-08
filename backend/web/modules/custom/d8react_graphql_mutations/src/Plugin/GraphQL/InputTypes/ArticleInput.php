@@ -15,6 +15,10 @@ use Drupal\graphql\Plugin\GraphQL\InputTypes\InputTypePluginBase;
  *     "body" = {
  *        "type" = "String",
  *        "nullable" = "TRUE"
+ *     },
+ *     "field_more" = {
+ *        "type" = "String",
+ *        "nullable" = "TRUE"
  *     }
  *   }
  * )

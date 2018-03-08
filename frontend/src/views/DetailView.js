@@ -7,6 +7,12 @@ query ($id: String!) {
     entityId
     entityLabel
     entityCreated
+    ... on NodeArticle {
+      body {
+        value
+      }
+      fieldMore
+    }
   }
 }
 `;
@@ -17,9 +23,11 @@ class DetailView extends React.Component {
     if (data.loading) { return <div>Loading...</div> }
     return (
       <div>
-        <h1>Node ID: {data.nodeById.entityId}</h1>
-        <p>{data.nodeById.entityCreated}</p>
-        <p>{data.nodeById.entityLabel}</p>
+        <h1>{data.nodeById.entityLabel}</h1>
+        <p>Created on: {data.nodeById.entityCreated}</p>
+        <p>ID: {data.nodeById.entityId}</p>
+        <p>More field: {data.nodeById.fieldMore}</p>
+        <p>{data.nodeById.body.value}</p>
       </div>
     )
   }
