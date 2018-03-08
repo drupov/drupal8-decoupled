@@ -27,7 +27,7 @@ class CreateArticle extends CreateEntityBase {
    * {@inheritdoc}
    */
   protected function extractEntityInput($value, array $args, ResolveContext $context, ResolveInfo $info) {
-    return $args['input'];
+    return array_filter($args['input']);
   }
 
 }
