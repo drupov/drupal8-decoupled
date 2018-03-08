@@ -3,7 +3,8 @@
 namespace Drupal\d8react_graphql_mutations\Plugin\GraphQL\Mutations;
 
 use Drupal\graphql_core\Plugin\GraphQL\Mutations\Entity\UpdateEntityBase;
-use Youshido\GraphQL\Execution\ResolveInfo;
+use Drupal\graphql\GraphQL\Execution\ResolveContext;
+use GraphQL\Type\Definition\ResolveInfo;
 
 /**
  * Simple mutation for updating an existing article node.
@@ -26,8 +27,8 @@ class UpdateArticle extends UpdateEntityBase {
   /**
    * {@inheritdoc}
    */
-  protected function extractEntityInput(array $inputArgs, ResolveInfo $info) {
-    return array_filter($inputArgs['input']);
+  protected function extractEntityInput($value, array $args, ResolveContext $context, ResolveInfo $info) {
+    return array_filter($args['input']);
   }
 
 }

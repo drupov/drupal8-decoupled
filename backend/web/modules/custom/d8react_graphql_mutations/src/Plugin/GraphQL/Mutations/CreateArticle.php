@@ -3,7 +3,8 @@
 namespace Drupal\d8react_graphql_mutations\Plugin\GraphQL\Mutations;
 
 use Drupal\graphql_core\Plugin\GraphQL\Mutations\Entity\CreateEntityBase;
-use Youshido\GraphQL\Execution\ResolveInfo;
+use Drupal\graphql\GraphQL\Execution\ResolveContext;
+use GraphQL\Type\Definition\ResolveInfo;
 
 /**
  * Simple mutation for creating a new article node.
@@ -25,8 +26,8 @@ class CreateArticle extends CreateEntityBase {
   /**
    * {@inheritdoc}
    */
-  protected function extractEntityInput(array $inputArgs, ResolveInfo $info) {
-    return $inputArgs['input'];
+  protected function extractEntityInput($value, array $args, ResolveContext $context, ResolveInfo $info) {
+    return $args['input'];
   }
 
 }
