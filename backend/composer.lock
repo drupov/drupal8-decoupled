@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9dbd56449e21557fcbf9336f693a8f78",
+    "content-hash": "05d677da4297d2ecedd00d807f9a711d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2170,6 +2170,9 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "#546 GraphQL field name collision with comments": "patches/546-comment-graphqlfield-name.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
