@@ -6,7 +6,7 @@ const query = gql`
 query {
   nodeQuery (limit: 100) {
     entities {
-      entityId
+      gqlentityId
       entityLabel
     }
   }
@@ -21,9 +21,9 @@ class HomeView extends React.Component {
       <div>
         <Link to='node/add'>Add article</Link>
         {data.nodeQuery.entities.map((item, index) => (
-          <p key={item.entityId}>
-            <Link to={`/node/${item.entityId}/`}>
-              {item.entityLabel} ({item.entityId})
+          <p key={item.gqlentityId}>
+            <Link to={`/node/${item.gqlentityId}/`}>
+              {item.entityLabel} ({item.gqlentityId})
             </Link>
           </p>
         ))}
