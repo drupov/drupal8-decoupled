@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "05d677da4297d2ecedd00d807f9a711d",
+    "content-hash": "9dbd56449e21557fcbf9336f693a8f78",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2152,7 +2152,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/graphql",
-                "reference": "2132807132a0570977b13435b335f6cc31f01335"
+                "reference": "962268c686b306a0e943340921839b853f695c39"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -2164,15 +2164,12 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta5+20-dev",
-                    "datestamp": "1518529080",
+                    "version": "8.x-3.0-beta5+43-dev",
+                    "datestamp": "1521122284",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "#546 GraphQL field name collision with comments": "patches/546-comment-graphqlfield-name.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2194,7 +2191,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/graphql"
             },
-            "time": "2018-03-08T16:48:01+00:00"
+            "time": "2018-03-15T13:28:53+00:00"
         },
         {
             "name": "drupal/module_filter",

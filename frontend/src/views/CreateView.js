@@ -5,7 +5,7 @@ const mutation = gql`
 mutation ($input: ArticleInput!) {
   createArticle(input: $input) {
     entity {
-      gqlentityId
+      entityId
       entityLabel
     }
     errors
