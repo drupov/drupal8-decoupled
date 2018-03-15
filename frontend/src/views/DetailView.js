@@ -4,7 +4,7 @@ import { gql, graphql } from 'react-apollo';
 const query = gql`
 query ($id: String!) {
   nodeById(id: $id) {
-    gqlentityId
+    entityId
     entityLabel
     entityCreated
     ... on NodeArticle {
@@ -25,7 +25,7 @@ class DetailView extends React.Component {
       <div>
         <h1>{data.nodeById.entityLabel}</h1>
         <p>Created on: {data.nodeById.entityCreated}</p>
-        <p>ID: {data.nodeById.gqlentityId}</p>
+        <p>ID: {data.nodeById.entityId}</p>
         <p>More field: {data.nodeById.fieldMore}</p>
         <p>{data.nodeById.body.value}</p>
       </div>
