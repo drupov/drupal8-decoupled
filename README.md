@@ -18,11 +18,7 @@ The backend (Drupal) part is based on the drupal-composer project, so that
 
 Change into the `/backend` folder and run `lando composer update` to get files needed for your Drupal installation.
 
-In order to use the configuration through the config_installer profile add this to you `settings.php`:
-
-`$settings['install_profile'] = 'config_installer';`
-
-Change inside your `/backend/web` folder in the container and run
+Change into your `/backend/web` folder in the container and run
 `lando drush si config_installer --db-url=mysql://drupal8:drupal8@database/drupal8 --account-pass=admin --yes` to
 install Drupal with the predefined configuration.
 
