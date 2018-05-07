@@ -1,0 +1,19 @@
+uuid: c6d63695-b08a-415d-915a-c74dd1487f2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_more
+    - node.type.article
+id: node.article.field_more
+field_name: field_more
+entity_type: node
+bundle: article
+label: More
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
