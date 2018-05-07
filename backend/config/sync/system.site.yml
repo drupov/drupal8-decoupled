@@ -1,5 +1,5 @@
-uuid: b56fb127-d130-4fce-b3d2-65e9d65ab526
-name: Site-Install
+uuid: fa5be07a-2ec0-4319-8cba-209161d88108
+name: 'Drush Site-Install'
 mail: admin@example.com
 slogan: ''
 page:
@@ -11,4 +11,4 @@ weight_select_max: 100
 langcode: en
 default_langcode: en
 _core:
-  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
