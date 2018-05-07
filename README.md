@@ -5,10 +5,10 @@ The backend runs on a [lando](https://docs.devwithlando.io/tutorials/drupal8.htm
 
 Run the following command to start the lando environment:
 ```
-cd backend
+# Execute in /backend
 lando start
 ```
-You should now be able to connect to the container on [https://d8-react.lndo.site](https://d8-react.lndo.site).
+You should now be able to connect to the container on [https://d8react.lndo.site](https://d8react.lndo.site).
 
 If you're starting from scratch there will be a "File not found"-error, as the backend is not installed yet (see next
 section).
@@ -19,13 +19,12 @@ The backend (Drupal) part is based on the drupal-composer project, so that
 
 Run following commands to get files needed for your Drupal installation:
 ```
-cd backend
+# Execute in /backend
 lando composer install
-lando composer drupal-scaffold
 ```
 Install Drupal with the predefined configuration:
 ```
-cd backend/web
+# Execute in /backend/web
 lando drush si config_installer --db-url=mysql://drupal8:drupal8@database/drupal8 --account-pass=admin --yes
 ```
 You should now be able to see a fully installed Drupal 8 at [https://d8-react.lndo.site](https://d8-react.lndo.site).
@@ -36,7 +35,7 @@ The frontend (React) part is based on the create-react-app project, so that
 
 Run following commands to download the dependencies and start the development server:
 ```
-cd frontend
+# Execute in /frontend
 npm install
 npm start
 ```
