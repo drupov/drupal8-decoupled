@@ -2,5 +2,5 @@ name: d8-react
 recipe: drupal8
 config:
   via: nginx
-  webroot: backend/web
+  webroot: web
   xdebug: true

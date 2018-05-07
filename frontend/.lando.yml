@@ -1,0 +1,19 @@
+name: d8-react
+proxy:
+  appserver:
+    - d8-react.lndo.site
+services:
+  appserver:
+    type: node:6.10
+    ssl: true
+    globals:
+      gulp-cli: "latest"
+tooling:
+  npm:
+    service: appserver_cli
+  node:
+    service: appserver_cli
+  yarn:
+    service: appserver_cli  
+  gulp:
+    service: appserver
