@@ -43,24 +43,5 @@ npm start
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Connect the app with the backend
-Drupal is configured to not allow sending content to a different domain than its own. Following needs to be done:
-
-Copy the "default.services.yml" as "services.yml":
-```
-cp backend/web/sites/default/default.services.yml backend/web/sites/default/services.yml 
-```
-and change following values:
-```
-  cors.config:
-    enabled: true
-    # Specify allowed headers, like 'x-allowed-header'.
-    allowedHeaders: ['Content-Type', 'Access-Control-Allow-Origin']
-    # Specify allowed request methods, specify ['*'] to allow all possible ones.
-    allowedMethods: ['*']
-```
-Clear the cache, so that the changes take effect.
-```
-lando drupal cr all
-```
 Note, there is not authentication in the app (yet), so anonymous user in Drupal are assigned the permission "Execute
 arbitrary GraphQL requests".
