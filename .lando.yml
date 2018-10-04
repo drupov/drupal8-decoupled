@@ -1,0 +1,24 @@
+name: d8-react
+recipe: drupal8
+config:
+  via: nginx
+  webroot: backend/web
+  xdebug: true
+services:
+  node:
+    type: node:6.10
+    overrides:
+      services:
+        ports:
+        - 3000:3000
+    globals:
+      gulp-cli: latest
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
+  yarn:
+    service: node
+  gulp:
+    service: node
