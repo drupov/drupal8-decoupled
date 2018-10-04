@@ -27,7 +27,7 @@ Install Drupal with the predefined configuration:
 # Execute in /backend/web
 lando drush si config_installer --db-url=mysql://drupal8:drupal8@database/drupal8 --account-pass=admin --yes
 ```
-You should now be able to see a fully installed Drupal 8 at [https://d8-react.lndo.site](https://d8-react.lndo.site).
+You should now be able to see a fully installed Drupal 8 at [https://d8react.lndo.site](https://d8react.lndo.site).
 
 ## Installation instructions - frontend
 The frontend (React) part is based on the create-react-app project, so that
@@ -36,8 +36,8 @@ The frontend (React) part is based on the create-react-app project, so that
 Run following commands to download the dependencies and start the development server:
 ```
 # Execute in /frontend
-npm install
-npm start
+lando npm install
+lando npm start
 ```
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
