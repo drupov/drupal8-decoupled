@@ -6,7 +6,7 @@ config:
   xdebug: true
 services:
   node:
-    type: node:6.10
+    type: node:8.9
     overrides:
       services:
         ports:
