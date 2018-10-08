@@ -1,7 +1,8 @@
-import React from 'react';
-import { gql, graphql } from 'react-apollo';
+import React, { Component } from 'react';
+import { Query } from 'react-apollo';
+import gql from 'graphql-tag';
 
-const query = gql`
+const GET_NODE = gql`
 query ($id: String!) {
   nodeById(id: $id) {
     entityId
@@ -17,30 +18,27 @@ query ($id: String!) {
 }
 `;
 
-class DetailView extends React.Component {
+class DetailView extends Component {
   render() {
-    let { data } = this.props;
-    if (data.loading) { return <div>Loading...</div> }
     return (
-      <div>
-        <h1>{data.nodeById.entityLabel}</h1>
-        <p>Created on: {data.nodeById.entityCreated}</p>
-        <p>ID: {data.nodeById.entityId}</p>
-        <p>More field: {data.nodeById.fieldMore}</p>
-        <p>{data.nodeById.body.value}</p>
-      </div>
-    )
+      <Query query={GET_NODE} variables={{id: this.props.match.params.id}}>
+        {({ loading, error, data }) => {
+          if (loading) return <p>Loading...</p>;
+          if (error) return <p>Error :(</p>;
+
+          return (
+            <div>
+              <h1>{data.nodeById.entityLabel}</h1>
+              <p>Created on: {data.nodeById.entityCreated}</p>
+              <p>ID: {data.nodeById.entityId}</p>
+              <p>More field: {data.nodeById.fieldMore}</p>
+              <p>{data.nodeById.body.value}</p>
+            </div>
+          );
+        }}
+      </Query>
+    );
   }
 }
-
-const queryOptions = {
-  options: props => ({
-    variables: {
-      id: props.match.params.id
-    },
-  }),
-};
-
-DetailView = graphql(query, queryOptions)(DetailView);
 
 export default DetailView;
