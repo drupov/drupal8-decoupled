@@ -10,7 +10,7 @@ services:
     overrides:
       services:
         ports:
-        - 3000:3000
+          - 3000:3000
     globals:
       gulp-cli: latest
 tooling:
