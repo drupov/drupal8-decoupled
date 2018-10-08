@@ -1,20 +1,13 @@
 import React, { Component } from 'react';
-import { ApolloClient, ApolloProvider, createBatchingNetworkInterface } from 'react-apollo';
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from 'react-apollo';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HomeView from './views/HomeView';
 import CreateView from './views/CreateView';
 import DetailView from './views/DetailView';
 
-const networkInterface = createBatchingNetworkInterface({
-  uri: 'https://d8react.lndo.site/graphql',
-  batchInterval: 10,
-  opts: {
-    credentials: 'same-origin',
-  }
-});
-
 const client = new ApolloClient({
-  networkInterface: networkInterface
+  uri: 'https://d8react.lndo.site/graphql',
 });
 
 class App extends Component {
