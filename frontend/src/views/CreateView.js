@@ -19,6 +19,61 @@ mutation ($input: ArticleInput!) {
 `;
 
 class CreateView extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: '',
+      body: '',
+      field_more: ''
+    };
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(e) {
+    return;
+    this.setState({ todo: e.target.value });
+  }
+
+  resetTodo() {
+    this.setState({
+      title: '',
+      body: '',
+      field_more: ''
+    });
+  }
+
+  render() {
+    return (
+      <Mutation mutation={CREATE_NODE}>
+        {createNode => (
+          <form
+            onSubmit={e => {
+              e.preventDefault();
+              createNode({ input: {
+                title: this.state.title,
+                body: this.state.body,
+                field_more: this.state.more
+              }});
+              this.resetTodo();
+            }}
+          >
+            <label htmlFor="title">Title</label>
+            <input type="text" name="title" />
+            <br />
+            <label htmlFor="body">Body</label>
+            <textarea name="body" />
+            <br />
+            <label htmlFor="more">More</label>
+            <input type="text" name="more" />
+            <br />
+            }}>
+            <button type="submit">Create article</button>
+          </form>
+        )}
+      </Mutation>
+    );
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     let formData = new FormData(this.form);
@@ -47,32 +102,35 @@ class CreateView extends Component {
       })
       .catch(err => {
         console.log('Network error!');
-      });*/
+      });
   }
 
   render() {
     return (
-      <Mutation mutation={CREATE_NODE} variables={{ input }}>
-        <div>
-          <h1>Create</h1>
-          <form
-            ref={ref => (this.form = ref)}
-            onSubmit={e => this.handleSubmit(e)}
-          >
-            <label htmlFor="title">Title</label>
-            <input type="text" name="title" />
-            <br />
-            <label htmlFor="body">Body</label>
-            <textarea name="body" />
-            <br />
-            <label htmlFor="more">More</label>
-            <input type="text" name="more" />
-            <br />
-            <button type="submit">Submit</button>
-          </form>
-        </div>
+      <Mutation mutation={CREATE_NODE}>
+        {(createNode, { data }) => (
+          <div>
+            <h1>Create</h1>
+            <form
+              ref={ref => (this.form = ref)}
+              onSubmit={e => this.handleSubmit(e)}
+            >
+              <label htmlFor="title">Title</label>
+              <input type="text" name="title" />
+              <br />
+              <label htmlFor="body">Body</label>
+              <textarea name="body" />
+              <br />
+              <label htmlFor="more">More</label>
+              <input type="text" name="more" />
+              <br />
+              }}>
+                <button type="submit">Submit</button>
+            </form>
+          </div>
+        )};
       </Mutation>
-    )
+    )*/
   }
 }
 
