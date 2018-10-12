@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 
-const GET_NODE = gql`
+const GET_ARTICLE = gql`
 query ($id: String!) {
   nodeById(id: $id) {
     entityId
@@ -18,10 +18,10 @@ query ($id: String!) {
 }
 `;
 
-class DetailView extends Component {
+class ArticleFull extends Component {
   render() {
     return (
-      <Query query={GET_NODE} variables={{id: this.props.match.params.id}}>
+      <Query query={GET_ARTICLE} variables={{id: this.props.match.params.id}}>
         {({ loading, error, data }) => {
           if (loading) return <p>Loading...</p>;
           if (error) return <p>Error :(</p>;
@@ -41,4 +41,4 @@ class DetailView extends Component {
   }
 }
 
-export default DetailView;
+export default ArticleFull;
