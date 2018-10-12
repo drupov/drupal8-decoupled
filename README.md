@@ -41,6 +41,9 @@ lando npm start
 ```
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Connect the app with the backend
+## Functionalities
+You can view a list of articles, view single articles or create a new article through the React-frontend. Articles
+created via the Drupal backend will also be shown in the frontend app.
+
 Note, there is not authentication in the app (yet), so anonymous user in Drupal are assigned the permission "Execute
 arbitrary GraphQL requests".
