@@ -15,6 +15,7 @@ module:
   config: 0
   config_filter: 0
   config_split: 0
+  consumers: 0
   contact: 0
   contextual: 0
   d8react_graphql_mutations: 0
@@ -41,7 +42,9 @@ module:
   quickedit: 0
   rdf: 0
   search: 0
+  serialization: 0
   shortcut: 0
+  simple_oauth: 0
   system: 0
   taxonomy: 0
   text: 0
