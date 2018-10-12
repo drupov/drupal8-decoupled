@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Mutation } from 'react-apollo';
 import gql from 'graphql-tag';
 
-const CREATE_NODE = gql`
+const CREATE_ARTICLE = gql`
 mutation ($input: ArticleInput!) {
   createArticle(input: $input) {
     entity {
@@ -18,17 +18,17 @@ mutation ($input: ArticleInput!) {
 }
 `;
 
-class CreateView extends Component {
+class CreateArticle extends Component {
   render() {
     return (
-      <Mutation mutation={CREATE_NODE}>
-        {createNode => (
+      <Mutation mutation={CREATE_ARTICLE}>
+        {createArticle => (
           <form
             ref={ref => (this.form = ref)}
             onSubmit={e => {
               e.preventDefault();
               let formData = new FormData(this.form);
-              createNode({ variables: {
+              createArticle({ variables: {
                 input: {
                   title: formData.get('title'),
                   body: formData.get('body'),
@@ -64,4 +64,4 @@ class CreateView extends Component {
   }
 }
 
-export default CreateView;
+export default CreateArticle;

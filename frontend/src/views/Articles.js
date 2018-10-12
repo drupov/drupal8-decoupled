@@ -14,7 +14,7 @@ query {
 }
 `;
 
-class HomeView extends Component {
+class Articles extends Component {
   render() {
     return (
       <Query query={GET_NODES}>
@@ -40,4 +40,4 @@ class HomeView extends Component {
   }
 }
 
-export default HomeView;
+export default Articles;

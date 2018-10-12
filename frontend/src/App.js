@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from 'react-apollo';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HomeView from './views/HomeView';
-import CreateView from './views/CreateView';
-import DetailView from './views/DetailView';
+import Articles from './views/Articles';
+import CreateArticle from './views/CreateArticle';
+import ArticleFull from './views/ArticleFull';
 
 const client = new ApolloClient({
   uri: 'https://d8react.lndo.site/graphql',
@@ -16,10 +16,10 @@ class App extends Component {
       <ApolloProvider client={client}>
         <Router>
           <div>
-            <Route exact path="/" component={HomeView} />
+            <Route exact path="/" component={Articles} />
             <Switch>
-              <Route exact path="/node/add/" component={CreateView} />
-              <Route exact path="/node/:id/" component={DetailView} />
+              <Route exact path="/node/add/" component={CreateArticle} />
+              <Route exact path="/node/:id/" component={ArticleFull} />
             </Switch>
           </div>
         </Router>
