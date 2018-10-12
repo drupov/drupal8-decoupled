@@ -1,0 +1,14 @@
+uuid: 8503b4cd-1fb3-4884-a5a7-d67d0ad0a232
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.oauth_consumer
+  module:
+    - user
+id: user_add_role_action.oauth_consumer
+label: 'Add the OAuth consumer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: oauth_consumer

@@ -12,6 +12,7 @@ module:
   fpa: 0
   kint: 0
   module_filter: 0
+  simple_oauth_extras: 0
   webprofiler: 0
 theme: {  }
 blacklist: {  }

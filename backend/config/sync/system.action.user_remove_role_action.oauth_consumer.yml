@@ -1,0 +1,14 @@
+uuid: 71865479-5d6c-4332-970d-a0f82f73f2ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.oauth_consumer
+  module:
+    - user
+id: user_remove_role_action.oauth_consumer
+label: 'Remove the OAuth consumer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: oauth_consumer
