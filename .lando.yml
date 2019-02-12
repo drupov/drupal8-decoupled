@@ -6,14 +6,17 @@ config:
   xdebug: true
 services:
   node:
-    type: node:8.9
+    type: node
     overrides:
-      services:
-        ports:
-          - 3000:3000
+      ports:
+        - 3000:3000
     globals:
       gulp-cli: latest
 tooling:
+  drush:
+    service: appserver
+    cmd:
+      - drush --root=/app/backend/web
   npm:
     service: node
   node:

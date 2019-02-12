@@ -1,7 +1,7 @@
 # Drupal 8 GraphQL installation with React frontend
 
 ## Lando
-The backend runs on a [lando](https://docs.devwithlando.io/tutorials/drupal8.html) environment with with PHP 7.1.
+The backend runs on a [lando](https://docs.devwithlando.io/tutorials/drupal8.html) environment with with PHP 7.2.
 
 Run the following command to start the lando environment:
 ```
@@ -26,8 +26,9 @@ Install Drupal with the predefined configuration:
 ```
 # Execute in /backend/web
 lando drush si config_installer --db-url=mysql://drupal8:drupal8@database/drupal8 --account-pass=admin --yes
+lando drush csim development
 ```
-You should now be able to see a fully installed Drupal 8 at [https://d8react.lndo.site](https://d8react.lndo.site).
+You should now be able to see a fully installed Drupal 8 at [https://d8-react.lndo.site](https://d8-react.lndo.site).
 
 ## Installation instructions - frontend
 The frontend (React) part is based on the create-react-app project, so that
