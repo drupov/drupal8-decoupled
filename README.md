@@ -1,7 +1,7 @@
 # Drupal 8 GraphQL installation with React frontend
 
 ## Lando
-The backend runs on a [lando](https://docs.devwithlando.io/tutorials/drupal8.html) environment with with PHP 7.1.
+The backend runs on a [lando](https://docs.devwithlando.io/tutorials/drupal8.html) environment with with PHP 7.2.
 
 Run the following command to start the lando environment:
 ```
