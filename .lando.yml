@@ -6,11 +6,10 @@ config:
   xdebug: true
 services:
   node:
-    type: node:8.9
-    overrides:
-      services:
-        ports:
-          - 3000:3000
+    type: node
+    services:
+      ports:
+        - 3000:3000
     globals:
       gulp-cli: latest
 tooling:
