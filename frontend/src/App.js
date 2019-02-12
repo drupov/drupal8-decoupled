@@ -7,7 +7,7 @@ import CreateArticle from './views/CreateArticle';
 import ArticleFull from './views/ArticleFull';
 
 const client = new ApolloClient({
-  uri: 'https://d8react.lndo.site/graphql',
+  uri: 'https://d8-react.lndo.site/graphql',
 });
 
 class App extends Component {

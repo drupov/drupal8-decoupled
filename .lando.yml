@@ -7,12 +7,16 @@ config:
 services:
   node:
     type: node
-    services:
+    overrides:
       ports:
         - 3000:3000
     globals:
       gulp-cli: latest
 tooling:
+  drush:
+    service: appserver
+    cmd:
+      - drush --root=/app/backend/web
   npm:
     service: node
   node:
