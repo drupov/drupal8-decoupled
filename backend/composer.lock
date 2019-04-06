@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "38aac5eae6fc3da14a77df6c7e20a382",
+    "content-hash": "4c6fd95d6fc9b6430262ce874412621b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2173,55 +2173,6 @@
             }
         },
         {
-            "name": "drupal/adminimal_admin_toolbar",
-            "version": "1.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/adminimal_admin_toolbar.git",
-                "reference": "8.x-1.9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/adminimal_admin_toolbar-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "d758b5070517b0be5ec71427dd3dbefeacd30a70"
-            },
-            "require": {
-                "drupal/admin_toolbar": "*",
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1548270780",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Ted Slesinski",
-                    "homepage": "https://www.drupal.org/u/energee"
-                }
-            ],
-            "description": "Adminimal styling brought to admin toolbar.",
-            "homepage": "https://www.drupal.org/project/adminimal_admin_toolbar",
-            "support": {
-                "source": "http://cgit.drupalcode.org/adminimal_admin_toolbar",
-                "issues": "https://www.drupal.org/project/issues/adminimal_admin_toolbar"
-            }
-        },
-        {
             "name": "drupal/coffee",
             "version": "1.0.0-beta2",
             "source": {
@@ -3202,108 +3153,6 @@
             "homepage": "http://drupal.org/project/graphql",
             "support": {
                 "source": "http://cgit.drupalcode.org/graphql"
-            }
-        },
-        {
-            "name": "drupal/module_filter",
-            "version": "3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/module_filter.git",
-                "reference": "8.x-3.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/module_filter-8.x-3.1.zip",
-                "reference": "8.x-3.1",
-                "shasum": "39d627ce60280ae54bcf9beae217b85cce1969e4"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-3.1",
-                    "datestamp": "1507650844",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "greenSkin",
-                    "homepage": "https://www.drupal.org/user/173855"
-                },
-                {
-                    "name": "realityloop",
-                    "homepage": "https://www.drupal.org/user/139189"
-                },
-                {
-                    "name": "shumushin",
-                    "homepage": "https://www.drupal.org/user/22093"
-                }
-            ],
-            "description": "Filter the modules list.",
-            "homepage": "https://www.drupal.org/project/module_filter",
-            "support": {
-                "source": "http://cgit.drupalcode.org/module_filter"
-            }
-        },
-        {
-            "name": "drupal/toolbar_anti_flicker",
-            "version": "1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/toolbar_anti_flicker.git",
-                "reference": "8.x-1.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/toolbar_anti_flicker-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "dffa2fc985b32c1609d5bec80197e84fe8311986"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1460820540",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "droplet",
-                    "homepage": "https://www.drupal.org/user/591932"
-                }
-            ],
-            "description": "Removing annoying re-rendering flickering.",
-            "homepage": "https://www.drupal.org/project/toolbar_anti_flicker",
-            "support": {
-                "source": "http://cgit.drupalcode.org/toolbar_anti_flicker"
             }
         },
         {
@@ -8069,6 +7918,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2018-08-09T05:50:03+00:00"
         },
         {
