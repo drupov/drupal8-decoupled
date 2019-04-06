@@ -24,7 +24,7 @@ lando composer install
 ```
 Install Drupal with the predefined configuration:
 ```
-# Execute in /backend/web
+# Execute in /backend
 lando drush si config_installer --db-url=mysql://drupal8:drupal8@database/drupal8 --account-pass=admin --yes
 ```
 You should now be able to see a fully installed Drupal 8 at [https://d8-react.lndo.site](https://d8-react.lndo.site).
