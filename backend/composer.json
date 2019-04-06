@@ -26,8 +26,6 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
         "drupal/devel": "^1.0",
-        "drupal/filter_perms": "dev-1.x",
-        "drupal/fpa": "dev-2.x",
         "drupal/graphql": "^3.0",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",

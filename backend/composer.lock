@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c6fd95d6fc9b6430262ce874412621b",
+    "content-hash": "9a163620d25a51256997df711d5ea61d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3006,102 +3006,6 @@
                 "issues": "http://drupal.org/project/devel",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             }
-        },
-        {
-            "name": "drupal/filter_perms",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/filter_perms.git",
-                "reference": "f491dd73fd876f6de0b2252c6b9bf18e0e27b357"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1469645939",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "cYu",
-                    "homepage": "https://www.drupal.org/user/202205"
-                },
-                {
-                    "name": "deekayen",
-                    "homepage": "https://www.drupal.org/user/972"
-                },
-                {
-                    "name": "willzyx",
-                    "homepage": "https://www.drupal.org/user/1043862"
-                }
-            ],
-            "description": "Provides role and module filters to simplify the user permissions page.",
-            "homepage": "https://www.drupal.org/project/filter_perms",
-            "support": {
-                "source": "http://cgit.drupalcode.org/filter_perms"
-            },
-            "time": "2016-07-27T19:01:11+00:00"
-        },
-        {
-            "name": "drupal/fpa",
-            "version": "dev-2.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/fpa.git",
-                "reference": "1bcf349420dfe433fba2c54034a4333e2266807c"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.x-dev",
-                    "datestamp": "1467836568",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "HakS",
-                    "homepage": "https://www.drupal.org/user/1815198"
-                },
-                {
-                    "name": "corey.aufang",
-                    "homepage": "https://www.drupal.org/user/163737"
-                }
-            ],
-            "description": "Fast filtering on permissions administration form.",
-            "homepage": "https://www.drupal.org/project/fpa",
-            "support": {
-                "source": "http://cgit.drupalcode.org/fpa"
-            },
-            "time": "2016-03-25T17:22:53+00:00"
         },
         {
             "name": "drupal/graphql",
@@ -8733,10 +8637,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "drupal/filter_perms": 20,
-        "drupal/fpa": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
