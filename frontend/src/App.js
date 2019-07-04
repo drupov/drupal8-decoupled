@@ -8,7 +8,7 @@ import ArticleFull from './components/ArticleFull';
 import './App.css';
 
 const client = new ApolloClient({
-  uri: 'https://d8-react.lndo.site/graphql',
+  uri: 'https://d8-decoupled.lndo.site/graphql',
 });
 
 const App = () => {

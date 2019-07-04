@@ -1,4 +1,4 @@
-name: d8-react
+name: d8-decoupled
 recipe: drupal8
 config:
   via: nginx

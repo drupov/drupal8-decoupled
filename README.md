@@ -8,7 +8,7 @@ Run the following command to start the lando environment:
 # Execute in /backend
 lando start
 ```
-You should now be able to connect to the container on [https://d8react.lndo.site](https://d8react.lndo.site).
+You should now be able to connect to the container on [https://d8-decoupled.lndo.site](https://d8-decoupled.lndo.site).
 
 If you're starting from scratch there will be a "File not found"-error, as the backend is not installed yet (see next
 section).
@@ -27,7 +27,7 @@ Install Drupal with the predefined configuration:
 # Execute in /backend
 lando drush si config_installer --db-url=mysql://drupal8:drupal8@database/drupal8 --account-pass=admin --yes
 ```
-You should now be able to see a fully installed Drupal 8 at [https://d8-react.lndo.site](https://d8-react.lndo.site).
+You should now be able to see a fully installed Drupal 8 at [https://d8-decoupled.lndo.site](https://d8-decoupled.lndo.site).
 
 Import all configuration
 ```
