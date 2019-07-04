@@ -1,4 +1,4 @@
-# Drupal 8 GraphQL installation with React frontend
+# Drupal 8 Decoupled PoC
 
 ## Lando
 The backend runs on a [lando](https://docs.devwithlando.io/tutorials/drupal8.html) environment with with PHP 7.2.
@@ -35,8 +35,6 @@ lando drush csim -y
 ```
 
 ## Installation instructions - frontend
-The frontend (React) part is based on the create-react-app project, so that
-[most of its' documentation](https://github.com/facebookincubator/create-react-app) should apply here too.
 
 Run following commands to download the dependencies and start the development server:
 ```
@@ -47,8 +45,5 @@ lando npm start
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Functionalities
-You can view a list of articles, view single articles or create a new article through the React-frontend. Articles
+You can view a list of articles, view single articles or create a new article through the frontend. Articles
 created via the Drupal backend will also be shown in the frontend app.
-
-Note, there is not authentication in the app (yet), so anonymous user in Drupal are assigned the permission "Execute
-arbitrary GraphQL requests".
